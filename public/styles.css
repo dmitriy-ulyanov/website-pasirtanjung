@@ -1,0 +1,671 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #312d2d30;
+    height: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo > img {
+    height: 50px;
+}
+
+.logo > p {
+    padding-left: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-links > li {
+    list-style: none;
+    padding: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-links > li > a:hover {
+    background-color: slategray;
+    color: white;
+}
+
+.hero {
+    width: 100vh;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    z-index: 1;
+    overflow: hidden;
+}
+
+.text-elements {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    transform: translate(-50%, 100%); /* Centers the text elements */
+    text-align: center;
+    top: 53%;
+    left: 50%;
+    opacity: 0;
+    animation: revealUp 1s ease-out forwards 0.5s;
+}
+
+@keyframes revealUp {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%); /* Centers the text elements */
+        top: 53%;
+        left: 50%;
+    }
+}
+
+.text-elements h1 {
+    font-size: 7rem;
+    margin: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.text-elements p {
+    font-size: 1.5rem;
+    margin: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hero-fg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    z-index: 3;
+    overflow: hidden;
+}
+
+.tentang-desa {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.map > img {
+    width: 100vh;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.about {
+    margin: 65px;
+}
+
+.about > h1 {
+    color: #355640;
+    font-size: 3.5rem;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.about > p {
+    color: #355640;
+    margin-top: 32px;
+    font-size: 12px;
+    font-family: "Lora", serif;
+    line-height: 20px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.about > button {
+    background-color: #355640;
+    border-style: none;
+    border-radius: 32px;
+    padding: 16px 32px;
+    margin-top: 32px;
+    float: right;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.about > button:hover {
+    background-color: #dd8823;
+}
+
+  /*WISATA SECTION---------------------------------*/
+.wisata {
+    width: 100vh;
+    height: 110vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.wisata > img {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+}
+
+.wisata-container {
+    z-index: 7;
+    margin: 66px;
+    position: absolute;
+    align-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.produk > img {
+    width: 400px;
+    height: auto;
+}
+
+.produk > h2 {
+    color: #355640;
+    font-size: 2rem;
+    margin: 16px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.produk > p {
+    color: #355640;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: "Lora", serif;
+    line-height: 20px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.produk {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produk:hover {
+    background-color: slategray; /* Mengubah warna latar belakang saat dihover */
+    box-shadow: 0 4px 8px slategray;
+}
+
+.produk:hover > h2 {
+    color: orange;
+}
+
+.produk:hover > p {
+    color: orange;
+}
+
+.produk-container {
+    cursor: pointer;
+    text-decoration: none; /* Menghapus garis bawah pada elemen <a> */
+    color: inherit; /* Mengatur warna teks agar sesuai dengan elemen <div> */
+}
+
+.karian > img {
+    width: 400px;
+    height: auto;
+}
+
+.karian > h2 {
+    color: #355640;
+    font-size: 2rem;
+    margin: 16px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.karian > p {
+    color: #355640;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: "Lora", serif;
+    line-height: 20px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.karian {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.karian:hover {
+    background-color: slategray; /* Mengubah warna latar belakang saat dihover */
+    box-shadow: 0 4px 8px slategray;
+}
+
+.karian:hover > h2 {
+    color: orange;
+}
+
+.karian:hover > p {
+    color: orange;
+}
+
+.karian-container {
+    cursor: pointer;
+    text-decoration: none; /* Menghapus garis bawah pada elemen <a> */
+    color: inherit; /* Mengatur warna teks agar sesuai dengan elemen <div> */
+}
+
+  /*BANNER*/
+
+.wisata-swiper {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.carousel-wisata {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-wisata-slide {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 100%;
+}
+
+.carousel-wisata-item {
+    min-width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.carousel-wisata-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-wisata-text {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    transform: translate(0, -50%); /* Centers the text elements */
+    text-align: left;
+    top: 50%;
+    left: -30%;
+    opacity: -5;
+    animation: revealRight 1s ease-out forwards 0.001s;
+}
+
+@keyframes revealRight {
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+        top: 50%;
+        left: 30%;
+    }
+}
+
+.carousel-wisata-item.active .carousel-wisata-text {
+    opacity: 1;
+}
+
+.carousel-wisata-text p {
+    font-size: 1rem;
+    margin: 16px;
+    font-family: "Lora", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.carousel-wisata-text h1 {
+    font-size: 7rem;
+    margin: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kegiatan-masyarakat {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.carousel-kegiatan {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    margin: 50px;
+}
+
+.carousel-kegiatan-slide {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 100%;
+}
+
+.carousel-kegiatan-item {
+    min-width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.carousel-kegiatan-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-kegiatan-text {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    color: #355640;
+    z-index: 2;
+    transform: translate(0%, -50%); /* Centers the text elements */
+    text-align: left;
+    top: 50%;
+    left: -30%;
+    opacity: -5;
+    animation: revealRight 1s ease-out forwards 0.001s;
+}
+
+@keyframes revealRight {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 30%;
+    }
+}
+
+.carousel-kegiatan-item.active {
+    opacity: 1;
+}
+
+.carousel-kegiatan-text p {
+    font-size: 1rem;
+    margin: 16px;
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carousel-kegiatan-text h2 {
+    font-size: 3rem;
+    margin: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.carousel-kegiatan-image {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    transform: translate(0%, -50%); /* Centers the text elements */
+    top: 50%;
+    left: 100%;
+    opacity: 1;
+    z-index: 5;
+    animation: getInLeft 1s ease-out forwards 0.1s;
+}
+
+@keyframes getInLeft {
+    to {
+        opacity: 1;
+        transform: translate(0%, -50%);
+        top: 50%;
+        left: 40%;
+    }
+}
+
+.carousel-kegiatan-image.active .carousel-kegiatan-image {
+    opacity: 1;
+}
+
+.carousel-kegiatan-image img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px, auto;
+    border: 2px solid red;
+}
+
+    /*DATA DESA SECTION---------------------------------*/
+
+.data-desa-spanduk {
+    width: 100%;
+    height: 50%; /* Full viewport height */
+    overflow: hidden;
+}
+
+.data-desa-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Ensures the image covers the container */
+    z-index: 1;
+    overflow: hidden;
+}
+
+.data-desa-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    transform: translate(-50%, 100%); /* Centers the text elements */
+    text-align: center;
+    top: 53%;
+    left: 50%;
+    opacity: 0;
+    animation: slideInUp 1s ease-out forwards 0.5s;
+}
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -150%); /* Centers the text elements */
+        top: 53%;
+        left: 50%;
+    }
+}
+
+.data-desa-text h1 {
+    font-size: 7rem;
+    margin: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.data-desa-text p {
+    font-size: 1rem;
+    margin: 16px;
+    font-family: "Lora", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.data-desa {
+    margin: 30px;
+}
+
+.data-desa-info h2 {
+    color: #355640;
+    font-size: 3rem;
+    margin-left: 70px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.data-desa-info p {
+    color: #355640;
+    margin-top: 22px;
+    margin-left: 70px;
+    font-size: 1rem;
+    font-family: "Lora", serif;
+    line-height: 20px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.cardbase {
+    display: flex;
+    width: calc(100% - 140px); /* Full width minus 70px margin on both sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-left,
+.card-right {
+    padding: 5px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two equal rows */
+    gap: 20px; /* Gap between rows */
+}
+
+.card-left {
+    flex: 25%;
+    background-color: #355640;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1; /* Ensures it stays below the right card */
+}
+
+.card-right {
+    flex: 75%;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -20%; /* Makes the right card overlap the left card */
+    z-index: 2; /* Ensures it stays above the left card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to create a layered effect */
+    border-radius: 10px; /* More rounded corners */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.text-container {
+    margin: 10px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 5px;
+    font-style: normal;
+}
+
+.card-left .text-container {
+    width: 25%; /* Ensures text containers only take up 1/4 of the left card */
+    align-self: start;
+}
+
+.card-right .text-container {
+    color: #355640;
+}
+
+.text-container h2 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+}
+
+.text-container p {
+    margin: 0;
+    font-family: "Lora", sans-serif;
+    font-weight: 20;
+    font-size: 1rem;
+}
+
+.text-container-bottom-left {
+    width: 25%; /* Ensures text containers only take up 1/4 of the left card */
+    align-self: start; /* Align text container to the start of the row */
+}
+
+.data-desa > button {
+    background-color: #355640;
+    border-style: none;
+    border-radius: 32px;
+    padding: 16px 75px;
+    margin-top: 40px;
+    margin-right: 70px;
+    float: right;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.data-desa > button:hover {
+    background-color: #dd8823;
+}
