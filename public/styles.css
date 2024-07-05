@@ -588,7 +588,7 @@ nav {
     position: relative;
     display: grid;
     grid-template-rows: 1fr 1fr; /* Two equal rows */
-    gap: 20px; /* Gap between rows */
+    gap: 10px; /* Gap between rows */
 }
 
 .card-left {
@@ -599,6 +599,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     z-index: 1; /* Ensures it stays below the right card */
+    border-radius: 30px;
 }
 
 .card-right {
@@ -611,9 +612,9 @@ nav {
     margin-left: -20%; /* Makes the right card overlap the left card */
     z-index: 2; /* Ensures it stays above the left card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to create a layered effect */
-    border-radius: 10px; /* More rounded corners */
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 30px; /* More rounded corners */
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .text-container {
