@@ -577,7 +577,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
 }
@@ -587,8 +587,8 @@ nav {
     padding: 5px;
     position: relative;
     display: grid;
-    grid-template-rows: 1fr 1fr; /* Two equal rows */
-    gap: 10px; /* Gap between rows */
+    /* grid-template-rows: 1fr 1fr; /* Two equal rows */
+    /* gap: 10px; /* Gap between rows */
 }
 
 .card-left {
@@ -599,7 +599,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     z-index: 1; /* Ensures it stays below the right card */
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .card-right {
@@ -612,9 +612,9 @@ nav {
     margin-left: -20%; /* Makes the right card overlap the left card */
     z-index: 2; /* Ensures it stays above the left card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to create a layered effect */
-    border-radius: 30px; /* More rounded corners */
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 20px; /* More rounded corners */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .text-container {
@@ -650,6 +650,13 @@ nav {
 .text-container-bottom-left {
     width: 25%; /* Ensures text containers only take up 1/4 of the left card */
     align-self: start; /* Align text container to the start of the row */
+    font-family: "Poppins", sans-serif;
+    font-size: 1.75rem;
+    margin: 10px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 5px;
+    font-style: normal;
 }
 
 .data-desa > button {

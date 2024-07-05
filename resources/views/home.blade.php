@@ -178,7 +178,7 @@
                 <div class="text-container">
                     <h2>Visi</h2>
                 </div>
-                <div class="text-container">
+                <div class="text-container-bottom-left">
                     <h2>Misi</h2>
                 </div>
             </div>
