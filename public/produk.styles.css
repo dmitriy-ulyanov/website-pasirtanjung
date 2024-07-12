@@ -102,6 +102,10 @@ nav {
     margin-left: 40px;
 }
 
+.abon-info img {
+    margin-top: 32px;
+}
+
 .abon-img {
     width: 40%;
     display: flex;
@@ -111,7 +115,7 @@ nav {
 }
 
 .abon-img img {
-    width: 70%;
+    width: 80%;
     height: auto;
     object-fit: contain;
 }
@@ -202,6 +206,10 @@ nav {
     margin-left: 40px;
 }
 
+.krupuk-info img {
+    margin-top: 32px;
+}
+
 .krupuk-img {
     width: 40%;
     display: flex;
@@ -211,7 +219,7 @@ nav {
 }
 
 .krupuk-img img {
-    width: 70%;
+    width: 80%;
     height: auto;
     object-fit: contain;
 }
