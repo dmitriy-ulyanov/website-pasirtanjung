@@ -10,6 +10,8 @@ header {
     z-index: 100;
 }
 
+    /* NAVBAR */
+
 nav {
     display: flex;
     flex-direction: row;
@@ -66,8 +68,10 @@ nav {
     color: white;
 }
 
+    /* HERO SECTION */
+
 .hero {
-    width: 100vh;
+    width: 100%;
     height: 100vh; /* Full viewport height */
     overflow: hidden;
 }
@@ -77,7 +81,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover; /* Ensures the image covers the container */
     z-index: 1;
     overflow: hidden;
@@ -125,11 +129,13 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover; /* Ensures the image covers the container */
     z-index: 3;
     overflow: hidden;
 }
+
+    /* ABOUT SECTION */
 
 .tentang-desa {
     height: 100vh;
@@ -137,10 +143,16 @@ nav {
     flex-direction: row;
 }
 
-.map > img {
+.map {
     width: 100vh;
     height: 100vh;
-    object-fit: cover;
+    position: relative;
+}
+
+iframe {
+    width: 100vh;
+    height: 100vh;
+    border: 0; /* Menghilangkan border */
 }
 
 .about {
@@ -173,6 +185,8 @@ nav {
     padding: 16px 32px;
     margin-top: 32px;
     float: right;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -185,9 +199,10 @@ nav {
 }
 
   /*WISATA SECTION---------------------------------*/
+
 .wisata {
-    width: 100vh;
-    height: 110vh; /* Full viewport height */
+    width: 100%;
+    height: 100%; /* Full viewport height */
     overflow: hidden;
 }
 
@@ -199,28 +214,33 @@ nav {
 
 .wisata-container {
     z-index: 7;
-    margin: 66px;
-    position: absolute;
+    margin: 54px;
+    position: relative;
     align-content: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 80px;
+    gap: 60px;
+}
+
+.produk,
+.karian {
+    flex: 1;
 }
 
 .produk > img {
-    width: 400px;
+    width: 100%;
     height: auto;
 }
 
 .produk > h2 {
     color: #355640;
     font-size: 2rem;
-    margin: 16px;
-    margin: 0px;
+    margin-top: 16px;
+    margin-bottom: 0px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -260,15 +280,15 @@ nav {
 }
 
 .karian > img {
-    width: 400px;
+    width: 100%;
     height: auto;
 }
 
 .karian > h2 {
     color: #355640;
     font-size: 2rem;
-    margin: 16px;
-    margin: 0px;
+    margin-top: 16px;
+    margin-bottom: 0px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -309,9 +329,11 @@ nav {
 
   /*BANNER*/
 
+    /*BANNER WISATA*/
+
 .wisata-swiper {
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100%; /* Full viewport height */
     overflow: hidden;
 }
 
@@ -355,9 +377,9 @@ nav {
 @keyframes revealRight {
     to {
         opacity: 1;
-        transform: translateX(0%);
+        transform: translate(0, -50%);
         top: 50%;
-        left: 30%;
+        left: 8%;
     }
 }
 
@@ -381,63 +403,68 @@ nav {
     font-style: normal;
 }
 
+    /*BANNER KEGIATAN*/
+
 .kegiatan-masyarakat {
     width: 100%;
     height: 100vh; /* Full viewport height */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-kegiatan {
     position: relative;
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 50px;
 }
 
 .carousel-kegiatan-slide {
     display: flex;
-    transition: transform 1s ease-in-out;
+    position: relative;
+    width: 100%;
     height: 100%;
 }
 
 .carousel-kegiatan-item {
-    min-width: 100%;
-    position: relative;
-    height: 100%;
-}
-
-.carousel-kegiatan-item img {
+    position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.carousel-kegiatan-text {
-    width: 60%;
-    height: 100%;
-    position: relative;
-    color: #355640;
-    z-index: 2;
-    transform: translate(0%, -50%); /* Centers the text elements */
-    text-align: left;
-    top: 50%;
-    left: -30%;
-    opacity: -5;
-    animation: revealRight 1s ease-out forwards 0.001s;
-}
-
-@keyframes revealRight {
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 30%;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .carousel-kegiatan-item.active {
     opacity: 1;
+}
+
+.carousel-kegiatan-text {
+    width: 60%;
+    color: #355640;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+
+.carousel-kegiatan-image {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-kegiatan-image img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
 }
 
 .carousel-kegiatan-text p {
@@ -445,55 +472,19 @@ nav {
     margin: 16px;
     font-family: "Lora", sans-serif;
     font-weight: 400;
-    font-style: normal;
 }
 
 .carousel-kegiatan-text h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin: 8px;
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-style: normal;
-}
-
-.carousel-kegiatan-image {
-    position: relative;
-    width: 40%;
-    height: 100%;
-    transform: translate(0%, -50%); /* Centers the text elements */
-    top: 50%;
-    left: 100%;
-    opacity: 1;
-    z-index: 5;
-    animation: getInLeft 1s ease-out forwards 0.1s;
-}
-
-@keyframes getInLeft {
-    to {
-        opacity: 1;
-        transform: translate(0%, -50%);
-        top: 50%;
-        left: 40%;
-    }
-}
-
-.carousel-kegiatan-image.active .carousel-kegiatan-image {
-    opacity: 1;
-}
-
-.carousel-kegiatan-image img {
-    width: 400px;
-    height: auto;
-    display: block;
-    margin: 20px, auto;
-    border: 2px solid red;
 }
 
     /*DATA DESA SECTION---------------------------------*/
 
 .data-desa-spanduk {
     width: 100%;
-    height: 50%; /* Full viewport height */
+    height: 300px; /* Full viewport height */
     overflow: hidden;
 }
 
@@ -502,7 +493,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 300px;
     object-fit: cover; /* Ensures the image covers the container */
     z-index: 1;
     overflow: hidden;
@@ -547,6 +538,7 @@ nav {
 
 .data-desa {
     margin: 30px;
+    margin-top: 77px;
 }
 
 .data-desa-info h2 {
@@ -571,11 +563,12 @@ nav {
     font-style: normal;
 }
 
-.cardbase {
+.data-desa-card .cardbase {
     display: flex;
-    width: calc(100% - 140px); /* Full width minus 70px margin on both sides */
+    width: calc(100% - 200px); /* Full width minus 70px margin on both sides */
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
@@ -623,11 +616,14 @@ nav {
     background: transparent;
     border-radius: 5px;
     font-style: normal;
+    vertical-align: top;
 }
 
 .card-left .text-container {
     width: 25%; /* Ensures text containers only take up 1/4 of the left card */
     align-self: start;
+    margin-top: 10px;
+    vertical-align: text-top;
 }
 
 .card-right .text-container {
@@ -637,7 +633,7 @@ nav {
 .text-container h2 {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 .text-container p {
@@ -657,9 +653,16 @@ nav {
     background: transparent;
     border-radius: 5px;
     font-style: normal;
+    /*vertical-align: top;*/
 }
 
-.data-desa > button {
+.data-desa-button {
+    margin-right: 25px;
+    margin-top: 14px;
+    margin-bottom: 32px;
+}
+
+.data-desa-button > button {
     background-color: #355640;
     border-style: none;
     border-radius: 32px;
@@ -667,6 +670,8 @@ nav {
     margin-top: 40px;
     margin-right: 70px;
     float: right;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -674,6 +679,537 @@ nav {
     color: white;
 }
 
-.data-desa > button:hover {
+.data-desa-button > button:hover {
     background-color: #dd8823;
+}
+
+ /* POTENSI DESA SECTION---------------------------------*/
+
+.potensi-desa h2 {
+    color: #355640;
+    font-size: 3rem;
+    margin-left: 95px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.potensi-desa-container {
+    margin-top: 40px;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.kolom-kiri,
+.kolom-tengah,
+.kolom-kanan {
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
+    flex: 1;
+}
+
+.kolom-kiri h1 {
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 2px;
+    text-align: center;
+    float: center;
+}
+
+.kolom-tengah h1 {
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 2px;
+    text-align: center;
+    float: center;
+}
+
+.kolom-kanan h1 {
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 2px;
+    text-align: center;
+    float: center;
+}
+
+.kolom-kiri p {
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+    float: center;
+}
+
+.kolom-tengah p {
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+    float: center;
+}
+
+.kolom-kanan p {
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+    float: center;
+}
+
+.potensi-desa-tabel h3 {
+    color: #355640;
+    font-size: 3rem;
+    margin-left: 12px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.potensi-desa-tabel h1 {
+    color: #355640;
+    font-size: 5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.potensi-desa-tabel p {
+    color: #355640;
+    font-size: 1rem;
+    font-family: "Lora", serif;
+    line-height: 20px;
+    font-weight: 200;
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.potensi-desa-tabel h4 {
+    background-color: #355640;
+    border-style: none;
+    border-radius: 12px;
+    padding: 16px 75px;
+    float: top;
+    align-content: center;
+    text-align: center;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BATAS DESA SECTION---------------------------------*/
+
+.batas-wilayah h2 {
+    color: #355640;
+    font-size: 3rem;
+    margin-left: 95px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.batas-wilayah-card .other-cardbase {
+    display: flex;
+    width: calc(100% - 200px); /* Full width minus 70px margin on both sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.other-card-left,
+.other-card-right {
+    padding: 15px;
+    position: relative;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; /* Two equal rows */
+    /* gap: 10px; /* Gap between rows */
+}
+
+.other-card-left {
+    flex: 40%;
+    background-color: #355640;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1; /* Ensures it stays below the right card */
+    border-radius: 20px;
+}
+
+.other-card-right {
+    flex: 60%;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -20%; /* Makes the right card overlap the left card */
+    z-index: 2; /* Ensures it stays above the left card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to create a layered effect */
+    border-radius: 20px; /* More rounded corners */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.other-text-container {
+    margin: 5px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 5px;
+    font-style: normal;
+    vertical-align: top;
+}
+
+.other-card-left .other-text-container {
+    width: 40%; /* Ensures text containers only take up 1/4 of the left card */
+    align-self: start;
+    margin-top: 10px;
+    vertical-align: text-top;
+}
+
+.other-card-right .other-text-container {
+    color: #355640;
+}
+
+.other-text-container p {
+    margin: 0;
+    font-family: "Lora", sans-serif;
+    font-weight: 20;
+    font-size: 1rem;
+}
+
+.other-text-container h4 {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+}
+
+/* STRUKTUR DESA SECTION---------------------------------*/
+
+.struktur-desa h2 {
+    color: #355640;
+    font-size: 3rem;
+    margin-left: 95px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.struktur-desa-card .another-cardbase {
+    display: flex;
+    width: calc(100% - 200px); /* Full width minus 70px margin on both sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.another-card-left,
+.another-card-right {
+    padding: 15px;
+    position: relative;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; /* Two equal rows */
+    /* gap: 10px; /* Gap between rows */
+}
+
+.another-card-left {
+    flex: 40%;
+    background-color: #355640;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1; /* Ensures it stays below the right card */
+    border-radius: 20px;
+}
+
+.another-card-right {
+    flex: 60%;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -20%; /* Makes the right card overlap the left card */
+    z-index: 2; /* Ensures it stays above the left card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to create a layered effect */
+    border-radius: 20px; /* More rounded corners */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.another-text-container {
+    margin: 5px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 5px;
+    font-style: normal;
+    vertical-align: top;
+}
+
+.another-card-left .another-text-container {
+    width: 40%; /* Ensures text containers only take up 1/4 of the left card */
+    align-self: start;
+    margin-top: 10px;
+    vertical-align: text-top;
+}
+
+.another-card-right .another-text-container {
+    color: #355640;
+}
+
+.another-text-container p {
+    margin: 0;
+    font-family: "Lora", sans-serif;
+    font-weight: 20;
+    font-size: 1rem;
+}
+
+.another-text-container h4 {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+}
+
+/* ANGGARAN DESA SECTION---------------------------------*/
+
+.anggaran-desa-button {
+    margin-right: 25px;
+    margin-top: 14px;
+    margin-bottom: 32px;
+}
+
+.anggaran-desa-button > button {
+    background-color: #355640;
+    border-style: none;
+    border-radius: 32px;
+    padding: 16px 75px;
+    margin-top: 40px;
+    margin-right: 70px;
+    float: right;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.anggaran-desa-button > button:hover {
+    background-color: #dd8823;
+}
+
+/*SARANA DESA SECTION---------------------------------*/
+
+.sarana-desa h2 {
+    color: #355640;
+    font-size: 3rem;
+    margin-left: 95px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.sarana-desa-card {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 0px); /* Full width minus margin */
+}
+
+.left-section, .right-section {
+    flex: 1;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-section {
+    margin-left: 70px;
+}
+
+.right-section {
+    margin-right: 70px;
+}
+
+.sarana-desa-card .sarana-cardbase-kiri,
+.sarana-desa-card .sarana-cardbase-kanan {
+    width: 100%;
+    max-width: 520px;
+}
+
+.sarana-cardbase-kiri {
+    float: right;
+}
+
+.sarana-cardbase-kanan {
+    float: left;
+}
+
+.card-top,
+.card-bottom {
+    position: relative;
+}
+
+.card-top {
+    background-color: #355640;
+    color: #fff;
+    z-index: 1; /* Ensures it stays below the bottom card */
+    border-radius: 20px 20px 0 0;
+    padding: 8px 0 20px 20px;
+}
+
+.card-bottom {
+    background-color: #fff;
+    color: #333;
+    margin-top: -20px; /* Overlap the top card slightly */
+    z-index: 2; /* Ensures it stays above the top card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to create a layered effect */
+    border-radius: 20px 20px 20px 20px; /* More rounded corners */
+    padding: 8px 0 20px 20px;
+}
+
+.sarana-text-container {
+    background: transparent;
+    border-radius: 5px;
+    font-style: normal;
+}
+
+.card-top .sarana-text-container h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.card-bottom .sarana-text-container p {
+    font-family: "Lora", sans-serif;
+    font-weight: 20;
+    font-size: 1rem;
+    color: #355640;
+}
+
+.sarana-text-container .tabel-kolom-kiri {
+    text-align: left;
+}
+
+.sarana-text-container .tabel-kolom-kanan {
+    text-align: left;
+}
+
+.tabel-kolom-kiri th {
+    text-align: left;
+    width: 40%;
+}
+
+.tabel-kolom-kanan th {
+    text-align: center;
+    width: 60%;
+}
+
+.tabel-kolom-kiri td {
+    text-align: left;
+    width: 40%;
+}
+
+.tabel-kolom-tengah td {
+    text-align: right;
+    width: 40%;
+}
+
+.tabel-kolom-kanan td {
+    text-align: center;
+    width: 20%;
+}
+
+/* BACK TO TOP */
+
+.back-to-top > a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    float: right;
+    margin-top: 32px;
+    margin-bottom: 2px;
+}
+
+.back-to-top > a:hover {
+    background-color: slategray;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    max-height: 200px;
+    margin-top: 2px;
+    width: 100%;
+    background-color: #adbea2;
+    justify-content: space-around;
+    padding: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.logo-desa img {
+    max-height: 100px;
+    padding: 16px;
+}
+
+footer h2 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #355640;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #355640;
 }
