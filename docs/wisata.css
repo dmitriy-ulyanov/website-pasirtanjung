@@ -268,7 +268,7 @@ footer p {
 /* Mobile */
 @media (max-width: 480px) {
     nav {
-        padding: 5px;
+        padding: 2px;
         height: auto;
     }
 
@@ -290,14 +290,14 @@ footer p {
     }
 
     .karian-content {
-        padding: 10px;
-        gap: 20px;
+        padding: 2px;
+        gap: 2px;
     }
 
     footer {
         flex-direction: column;
         text-align: center;
-        padding: 10px;
+        padding: 3px;
     }
 
     footer h2 {
@@ -305,6 +305,6 @@ footer p {
     }
 
     .logo-desa img {
-        max-height: 60px;
+        max-height: 20px;
     }
 }

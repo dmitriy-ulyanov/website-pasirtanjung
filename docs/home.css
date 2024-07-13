@@ -1220,18 +1220,29 @@ footer p {
 
 /* Ukuran layar kecil (mobile) */
 @media (max-width: 480px) {
-    nav {
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
+    .menu-toggle {
+        display: block; /* Show hamburger menu on smaller screens */
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: 0;
+        right: -100%; /* Start off-screen to the right */
+        background-color: white;
+        height: 100vh; /* Full viewport height */
+        width: 70%; /* Adjust as needed */
+        max-width: 300px; /* Maximum width for the menu */
+        transition: right 0.3s ease; /* Smooth slide-in animation */
+    }
+
+    .nav-links.active {
+        right: 0; /* Slide menu in from the right */
     }
 
     .nav-links > li {
-        padding: 12px;
+        padding: 20px;
+        text-align: center; /* Center align menu items */
     }
 
     .text-elements h1 {
