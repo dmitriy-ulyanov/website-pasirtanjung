@@ -126,7 +126,6 @@
             <div class="carousel-kegiatan-slide">
                 <div class="carousel-kegiatan-item active">
                     <div class="carousel-kegiatan-text">
-                        <br/>
                         <p>Kegiatan Warga</p>
                         <br/>
                         <h2>Pelatihan Marketing Bersama Anggota PKK</h2>
@@ -147,7 +146,6 @@
                 </div>
                 <div class="carousel-kegiatan-item">
                     <div class="carousel-kegiatan-text">
-                        <br/>
                         <p>Kegiatan Warga</p>
                         <br/>
                         <h2>Perawatan Kawasan Wisata<br/>Terpadu Bendungan Karian</h2>
@@ -242,7 +240,7 @@
             <div class="kolom-kiri">
                 <h3>👥</h3>
                 <h4>Jumlah Penduduk</h4>
-                <h1>5.422 </h1><p> Jiwa</p>
+                <h1>_5.422 </h1><p> Jiwa</p>
                 <br/>
                 <h4>Luas Wilayah</h4>
                 <h1>± 5.422 </h1><p> Ha</p>
@@ -251,19 +249,19 @@
             <div class="kolom-tengah">
                 <h3>🙎‍♂️</h3>
                 <h4>Penduduk Laki-laki</h4>
-                <h1>2.853 </h1><p> Jiwa</p>
+                <h1>_2.853 </h1><p> Jiwa</p>
                 <br/>
                 <h4>Jumlah RW</h4>
-                <h1>7</h1>
+                <h1>___7</h1>
             </div>
             <span></span>
             <div class="kolom-kanan">
                 <h3>🙎‍♀️</h3>
                 <h4>Penduduk Perempuan</h4>
-                <h1>2.569 </h1><p> Jiwa</p>
+                <h1>_2.569 </h1><p> Jiwa</p>
                 <br/>
                 <h4>Jumlah RT</h4>
-                <h1>24</h1>
+                <h1>__24</h1>
             </div>
         </div>
     </section>
