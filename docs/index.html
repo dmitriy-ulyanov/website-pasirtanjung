@@ -203,7 +203,6 @@
                 <br/>
                 <br/>
                 <br/>
-                <br/>
             </div>
             <div class="card-right">
                 <div class="text-container">
