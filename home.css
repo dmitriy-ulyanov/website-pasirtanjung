@@ -1219,19 +1219,30 @@ footer p {
 /* Media Queries untuk responsif */
 
 /* Ukuran layar kecil (mobile) */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
+@media (max-width: 480px) {
+    .menu-toggle {
+        display: block; /* Show hamburger menu on smaller screens */
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: 0;
+        right: -100%; /* Start off-screen to the right */
+        background-color: white;
+        height: 100vh; /* Full viewport height */
+        width: 70%; /* Adjust as needed */
+        max-width: 300px; /* Maximum width for the menu */
+        transition: right 0.3s ease; /* Smooth slide-in animation */
+    }
+
+    .nav-links.active {
+        right: 0; /* Slide menu in from the right */
     }
 
     .nav-links > li {
-        padding: 12px;
+        padding: 20px;
+        text-align: center; /* Center align menu items */
     }
 
     .text-elements h1 {
@@ -1317,7 +1328,7 @@ footer p {
 }
 
 /* Ukuran layar menengah (tablet) */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (max-width: 768px) {
     nav {
         padding-left: 30px;
         padding-right: 30px;
@@ -1404,102 +1415,6 @@ footer p {
     .batas-wilayah h2 {
         font-size: 2.5rem;
         margin-left: 50px;
-    }
-
-    .potensi-desa-container,
-    .batas-wilayah-card .other-cardbase {
-        flex-direction: row;
-    }
-}
-
-/* Ukuran layar besar (desktop) */
-@media (min-width: 1025px) {
-    nav {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .nav-links {
-        flex-direction: row;
-    }
-
-    .nav-links > li {
-        padding: 24px;
-    }
-
-    .text-elements h1 {
-        font-size: 7rem;
-    }
-
-    .text-elements p {
-        font-size: 1.5rem;
-    }
-
-    .tentang-desa {
-        flex-direction: row;
-        height: 100vh;
-    }
-
-    .map,
-    iframe {
-        width: 50%;
-        height: 100vh;
-    }
-
-    .about {
-        margin: 65px;
-    }
-
-    .about > h1 {
-        font-size: 3.5rem;
-    }
-
-    .about > p {
-        font-size: 1.5rem;
-    }
-
-    .wisata-container {
-        flex-direction: row;
-        gap: 60px;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .produk > h2,
-    .karian > h2 {
-        font-size: 2.5rem;
-    }
-
-    .produk > p,
-    .karian > p {
-        font-size: 1.5rem;
-    }
-
-    .data-desa-spanduk {
-        height: 300px;
-    }
-
-    .data-desa-text h1 {
-        font-size: 7rem;
-    }
-
-    .data-desa-text p {
-        font-size: 1.5rem;
-    }
-
-    .data-desa-card .cardbase {
-        flex-direction: row;
-        width: calc(100% - 200px);
-    }
-
-    .card-right {
-        margin-left: -20%;
-    }
-
-    .potensi-desa h2,
-    .batas-wilayah h2 {
-        font-size: 3rem;
-        margin-left: 95px;
     }
 
     .potensi-desa-container,
