@@ -1260,28 +1260,35 @@ footer p {
     .tentang-desa {
         flex-direction: column;
         height: auto;
+        flex: 1;
     }
 
     .map,
     iframe {
         width: 100%;
-        height: 300px;
+        height: 50%;
     }
 
     .about {
         width: 100%;
+        height: 50%;
         margin: 20px;
     }
 
     .about > h1 {
-        font-size: 1.7rem;
+        font-size: 1.455rem;
     }
 
     .about > p {
-        font-size: 0.5rem;
+        font-size: 0.65rem;
+    }
+
+    .wisata > img {
+        height: 90px;
     }
 
     .wisata-container {
+        flex: 1;
         flex-direction: column;
         align-items: center;
         align-content: center;
@@ -1290,28 +1297,32 @@ footer p {
 
     .produk > h2,
     .karian > h2 {
-        font-size: 0.7rem;
+        font-size: 2rem;
     }
 
     .produk > p,
     .karian > p {
-        font-size: 0.2rem;
+        font-size: 12px;
     }
 
     .carousel-wisata-text h1 {
-        font-size: 1rem;
+        font-size: 3.5rem;
     }
 
     .carousel-wisata-text p {
-        font-size: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .carousel-kegiatan {
+        max-height: 200px;
     }
 
     .carousel-kegiatan-text h2 {
-        font-size: 0.7rem;
+        font-size: 1.45rem;
     }
 
     .carousel-kegiatan-text p {
-        font-size: 0.2rem;
+        font-size: 0.615rem;
     }
 
     .carousel-kegiatan-image img {
@@ -1320,7 +1331,8 @@ footer p {
     }
 
     .data-desa-info h2 {
-        font-size: 0.7rem;
+        font-size: 2.2rem;
+        float: left;
     }
 
     .data-desa-info p {
@@ -1328,11 +1340,11 @@ footer p {
     }
 
     .data-desa-spanduk {
-        height: 200px;
+        height: 150px;
     }
 
     .data-desa-text h1 {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     .data-desa-text p {
@@ -1364,7 +1376,6 @@ footer p {
     }
 
     .batas-wilayah h2 {
-        align-items: center;
         font-size: 1rem;
     }
 
@@ -1378,8 +1389,8 @@ footer p {
     }
 
     .struktur-desa h2 {
-        font-size: 1.1rem;
-        align-items: center;
+        font-size: 1.65rem;
+        margin-left: 20px;
     }
 
     .struktur-desa-card .another-cardbase {
@@ -1391,41 +1402,84 @@ footer p {
         padding: 5px;
     }
 
+    .another-card-left {
+        flex: 50%;
+    }
+
+    .another-card-right {
+        flex: 50%;
+    }
+
+    .another-text-container h4 {
+        font-size: 0.85rem;
+    }
+
+    .another-text-container p {
+        font-size: 0.85rem;
+    }
+
     .anggaran-desa-button {
         align-items: center;
+        justify-content: center;
+        align-content: center;
     }
 
     .anggaran-desa-button > button {
-        padding: 8px 40px;
+        padding: 12px 40px;
     }
 
     .sarana-desa h2 {
-        font-size: 1.1rem;
-        align-items: center;
+        font-size: 1.65rem;
         margin-left: 20px;
     }
 
     .sarana-desa-card {
         flex: 1;
         flex-direction: column;
+        width: calc(100% - 20px);
+    }
+
+    .left-section {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .right-section {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sarana-cardbase-kiri,
+    .sarana-cardbase-kanan {
+        padding: 5px;
+    }
+
+    .back-to-top > a {
+        margin-top: 28px;
     }
 
     footer {
         flex-direction: column;
         max-height: 100px;
+        margin-bottom: 10px;
+        margin-top: 2px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .logo-desa img {
-        max-height: 30px;
+        max-height: 50px;
         padding: 4px;
     }
 
     footer h2 {
-        font-size: 0.7rem;
+        font-size: 1.4rem;
     }
 
     footer p {
-        font-size: 0.2rem;
+        font-size: 1.15rem;
     }
 }
 
