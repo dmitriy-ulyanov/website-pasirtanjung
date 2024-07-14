@@ -1220,26 +1220,41 @@ footer p {
 
 /* Ukuran layar kecil (mobile) */
 @media (max-width: 480px) {
-    nav {
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
+    .menu-toggle {
+        display: block; /* Show hamburger menu on smaller screens */
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: 0;
+        right: -100%; /* Start off-screen to the right */
+        background-color: white;
+        height: 100vh; /* Full viewport height */
+        width: 70%; /* Adjust as needed */
+        max-width: 300px; /* Maximum width for the menu */
+        transition: right 0.3s ease; /* Smooth slide-in animation */
+    }
+
+    .nav-links.active {
+        right: 0; /* Slide menu in from the right */
     }
 
     .nav-links > li {
-        padding: 12px;
+        padding: 20px;
+        text-align: center; /* Center align menu items */
+    }
+
+    .hero {
+        width: 100%;
     }
 
     .text-elements h1 {
-        font-size: 3rem;
+        font-size: 1.7rem;
     }
 
     .text-elements p {
-        font-size: 1rem;
+        font-size: 0.3rem;
     }
 
     .tentang-desa {
@@ -1254,32 +1269,62 @@ footer p {
     }
 
     .about {
+        width: 100%;
         margin: 20px;
     }
 
     .about > h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .about > p {
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 
     .wisata-container {
         flex-direction: column;
-        gap: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        align-items: center;
+        align-content: center;
+        margin: 20px;
     }
 
     .produk > h2,
     .karian > h2 {
-        font-size: 1.5rem;
+        font-size: 0.7rem;
     }
 
     .produk > p,
     .karian > p {
+        font-size: 0.2rem;
+    }
+
+    .carousel-wisata-text h1 {
         font-size: 1rem;
+    }
+
+    .carousel-wisata-text p {
+        font-size: 0.5rem;
+    }
+
+    .carousel-kegiatan-text h2 {
+        font-size: 0.7rem;
+    }
+
+    .carousel-kegiatan-text p {
+        font-size: 0.2rem;
+    }
+
+    .carousel-kegiatan-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .data-desa-info h2 {
+        font-size: 0.7rem;
+    }
+
+    .data-desa-info p {
+        font-size: 0.2rem;
     }
 
     .data-desa-spanduk {
@@ -1287,32 +1332,100 @@ footer p {
     }
 
     .data-desa-text h1 {
-        font-size: 3rem;
+        font-size: 0.7rem;
     }
 
     .data-desa-text p {
-        font-size: 1rem;
+        font-size: 0.2rem;
     }
 
     .data-desa-card .cardbase {
         flex-direction: column;
-        width: calc(100% - 40px);
+        width: calc(100% - 2px);
     }
 
     .card-right {
         margin-left: 0;
-        margin-top: 20px;
+    }
+
+    .data-desa-button {
+        align-items: center;
     }
 
     .potensi-desa h2,
     .batas-wilayah h2 {
-        font-size: 2rem;
-        margin-left: 20px;
+        font-size: 1.2rem;
+        margin-left: 5px;
     }
 
     .potensi-desa-container,
     .batas-wilayah-card .other-cardbase {
         flex-direction: column;
+    }
+
+    .batas-wilayah h2 {
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .batas-wilayah-card .other-cardbase {
+        width: calc(100% - 20px);
+    }
+
+    .other-card-left,
+    .other-card-right {
+        padding: 5px;
+    }
+
+    .struktur-desa h2 {
+        font-size: 1.1rem;
+        align-items: center;
+    }
+
+    .struktur-desa-card .another-cardbase {
+        width: calc(100% - 20px);
+    }
+
+    .another-card-left,
+    .another-card-right {
+        padding: 5px;
+    }
+
+    .anggaran-desa-button {
+        align-items: center;
+    }
+
+    .anggaran-desa-button > button {
+        padding: 8px 40px;
+    }
+
+    .sarana-desa h2 {
+        font-size: 1.1rem;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .sarana-desa-card {
+        flex: 1;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        max-height: 100px;
+    }
+
+    .logo-desa img {
+        max-height: 30px;
+        padding: 4px;
+    }
+
+    footer h2 {
+        font-size: 0.7rem;
+    }
+
+    footer p {
+        font-size: 0.2rem;
     }
 }
 

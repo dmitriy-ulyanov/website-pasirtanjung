@@ -383,12 +383,12 @@ footer p {
         font-size: 0.5rem;
     }
 
-    .abon-info button, .krupuk-info button {
-        padding: 2px 0;
+    .abon-info > button, .krupuk-info > button {
+        padding: 8px 20px;
     }
 
     footer {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         padding: 3px;
     }
@@ -398,6 +398,6 @@ footer p {
     }
 
     .logo-desa img {
-        max-height: 20px;
+        max-height: 50px;
     }
 }

@@ -364,40 +364,40 @@ footer p {
 @media (max-width: 480px) {
     nav {
         height: auto;
-        padding: 10px;
+        padding: 2px;
     }
 
     .logo > p, .logo > h4 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .nav-links > li > a {
-        padding: 4px 8px;
+        padding: 1px 2px;
     }
 
     .abon-info h2, .krupuk-info h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .abon-info p, .krupuk-info p, footer p {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
-    .abon-info button, .krupuk-info button {
-        padding: 10px 0;
+    .abon-info > button, .krupuk-info > button {
+        padding: 8px 20px;
     }
 
     footer {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
-        padding: 10px;
+        padding: 3px;
     }
 
     footer h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .logo-desa img {
-        max-height: 80px;
+        max-height: 50px;
     }
 }
