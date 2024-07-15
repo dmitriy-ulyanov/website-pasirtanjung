@@ -240,28 +240,40 @@
             <div class="kolom-kiri">
                 <h3>👥</h3>
                 <h4>Jumlah Penduduk</h4>
-                <h1> 5.422 </h1><p>Jiwa</p>
+                <div class="angka-kolom-kiri">
+                    <h1>5.422</h1><p>Jiwa</p>
+                </div>
                 <br/>
                 <h4>Luas Wilayah</h4>
-                <h1>± 5.422 </h1><p> Ha</p>
+                <div class="angka-kolom-kiri">
+                    <h1>1.255</h1><p>Ha</p>
+                </div>
             </div>
             <span></span>
             <div class="kolom-tengah">
                 <h3>🙎‍♂️</h3>
                 <h4>Penduduk Laki-laki</h4>
-                <h1> 2.853 </h1><p>Jiwa</p>
+                <div class="angka-kolom-tengah">
+                    <h1>2.853</h1><p>Jiwa</p>
+                </div>
                 <br/>
                 <h4>Jumlah RW</h4>
-                <h1>  7</h1>
+                <div class="angka-kolom-tengah">
+                    <h1>7</h1>
+                </div>
             </div>
             <span></span>
             <div class="kolom-kanan">
                 <h3>🙎‍♀️</h3>
                 <h4>Penduduk Perempuan</h4>
-                <h1> 2.569 </h1><p>Jiwa</p>
+                <div class="angka-kolom-kanan">
+                    <h1>2.569</h1><p>Jiwa</p>
+                </div>
                 <br/>
                 <h4>Jumlah RT</h4>
-                <h1>  24</h1>
+                <div class="angka-kolom-kanan">
+                    <h1>24</h1>
+                </div>
             </div>
         </div>
     </section>

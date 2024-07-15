@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desa Pasir Tanjung | Beranda</title>
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="normalize.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +24,7 @@
             <ul class="nav-links">
                 <li><a href="#tentang-desa">Tentang Desa</a></li>
                 <li><a href="#data-desa">Data Desa</a></li>
-                <li><a href="wisata.html">Wisata</a></li>
+                <li><a href="/wisata">Wisata</a></li>
             </ul>
         </nav>
     </header>
@@ -70,7 +70,7 @@
     <section class="wisata">
         <img src="water-border.png" alt="" />
         <div class="wisata-container">
-            <div class="produk" onclick="window.location.href='produk.html'" style="cursor: pointer">
+            <div class="produk" onclick="window.location.href='/produk'" style="cursor: pointer">
                 <img src="produk unggulan.webp" alt="" />
                 <h2>Produk Unggulan Desa</h2>
                 <p>
@@ -79,7 +79,7 @@
                 </p>
             </div>
             <span></span>
-            <div class="karian" onclick="window.location.href='wisata.html'" style="cursor: pointer">
+            <div class="karian" onclick="window.location.href='/wisata'" style="cursor: pointer">
                 <img src="kunjungi-karian.webp" alt="" />
                 <h2>
                     Kunjungi Kawasan <br />
@@ -240,28 +240,40 @@
             <div class="kolom-kiri">
                 <h3>👥</h3>
                 <h4>Jumlah Penduduk</h4>
-                <h1> 5.422 </h1><p>Jiwa</p>
+                <div class="angka-kolom-kiri">
+                    <h1>5.422</h1><p>Jiwa</p>
+                </div>
                 <br/>
                 <h4>Luas Wilayah</h4>
-                <h1>± 5.422 </h1><p> Ha</p>
+                <div class="angka-kolom-kiri">
+                    <h1>1.255</h1><p>Ha</p>
+                </div>
             </div>
             <span></span>
             <div class="kolom-tengah">
                 <h3>🙎‍♂️</h3>
                 <h4>Penduduk Laki-laki</h4>
-                <h1> 2.853 </h1><p>Jiwa</p>
+                <div class="angka-kolom-tengah">
+                    <h1>2.853</h1><p>Jiwa</p>
+                </div>
                 <br/>
                 <h4>Jumlah RW</h4>
-                <h1>  7</h1>
+                <div class="angka-kolom-tengah">
+                    <h1>7</h1>
+                </div>
             </div>
             <span></span>
             <div class="kolom-kanan">
                 <h3>🙎‍♀️</h3>
                 <h4>Penduduk Perempuan</h4>
-                <h1> 2.569 </h1><p>Jiwa</p>
+                <div class="angka-kolom-kanan">
+                    <h1>2.569</h1><p>Jiwa</p>
+                </div>
                 <br/>
                 <h4>Jumlah RT</h4>
-                <h1>  24</h1>
+                <div class="angka-kolom-kanan">
+                    <h1>24</h1>
+                </div>
             </div>
         </div>
     </section>
