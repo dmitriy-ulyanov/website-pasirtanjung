@@ -420,7 +420,7 @@
                     <div class="sarana-text-container">
                         <table width="100%">
                             <tr>
-                                <th colspan="1" class="tabel-kolom-kiri"><h4>Pendidikan Umum</h4></th>
+                                <th colspan="1" class="tabel-kolom-kiri"><h4>Pendidikan Umum 🏫</h4></th>
                                 <th colspan="2" class="tabel-kolom-kanan"><h4>Jumlah</h4></th>
                             </tr>
                         </table>
@@ -477,7 +477,7 @@
                     <div class="sarana-text-container">
                         <table width="100%">
                             <tr>
-                                <th colspan="1" class="tabel-kolom-kiri"><h4>Peribadatan</h4></th>
+                                <th colspan="1" class="tabel-kolom-kiri"><h4>Peribadatan 🛐</h4></th>
                                 <th colspan="2" class="tabel-kolom-kanan"><h4>Jumlah</h4></th>
                             </tr>
                         </table>
@@ -509,7 +509,7 @@
                     <div class="sarana-text-container">
                         <table width="100%">
                             <tr>
-                                <th colspan="1" class="tabel-kolom-kiri"><h4>Kesehatan</h4></th>
+                                <th colspan="1" class="tabel-kolom-kiri"><h4>Kesehatan 🏥</h4></th>
                                 <th colspan="2" class="tabel-kolom-kanan"><h4>Jumlah</h4></th>
                             </tr>
                         </table>
@@ -541,7 +541,7 @@
                     <div class="sarana-text-container">
                         <table width="100%">
                             <tr>
-                                <th colspan="1" class="tabel-kolom-kiri"><h4>Ekonomi</h4></th>
+                                <th colspan="1" class="tabel-kolom-kiri"><h4>Ekonomi 📈</h4></th>
                                 <th colspan="2" class="tabel-kolom-kanan"><h4>Jumlah</h4></th>
                             </tr>
                         </table>
@@ -664,7 +664,7 @@
                     <div class="sarana-text-container">
                         <table width="100%">
                             <tr>
-                                <th colspan="1" class="tabel-kolom-kiri"><h4>Olahraga</h4></th>
+                                <th colspan="1" class="tabel-kolom-kiri"><h4>Olahraga 🤸</h4></th>
                                 <th colspan="2" class="tabel-kolom-kanan"><h4>Jumlah</h4></th>
                             </tr>
                         </table>
@@ -691,7 +691,7 @@
                     <div class="sarana-text-container">
                         <table width="100%">
                             <tr>
-                                <th colspan="1" class="tabel-kolom-kiri"><h4>Ketertiban</h4></th>
+                                <th colspan="1" class="tabel-kolom-kiri"><h4>Ketertiban 👮‍♂</h4></th>
                                 <th colspan="2" class="tabel-kolom-kanan"><h4>Jumlah</h4></th>
                             </tr>
                         </table>
@@ -728,7 +728,7 @@
                     <div class="sarana-text-container">
                         <table width="100%">
                             <tr>
-                                <th colspan="1" class="tabel-kolom-kiri"><h4>Air Bersih dan Sanitasi</h4></th>
+                                <th colspan="1" class="tabel-kolom-kiri"><h4>Air Bersih dan Sanitasi 💧</h4></th>
                                 <th colspan="2" class="tabel-kolom-kanan"><h4>Jumlah</h4></th>
                             </tr>
                         </table>
