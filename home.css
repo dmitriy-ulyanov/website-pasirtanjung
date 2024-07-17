@@ -1193,7 +1193,7 @@ footer {
     display: flex;
     flex-direction: row;
     max-height: 200px;
-    width: 100dvw;
+    width: 100%;
     background-color: #adbea2;
     justify-content: space-evenly;
     overflow: hidden;

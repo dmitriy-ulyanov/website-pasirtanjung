@@ -288,11 +288,9 @@ footer {
     display: flex;
     flex-direction: row;
     max-height: 200px;
-    margin-top: 2px;
     width: 100%;
     background-color: #adbea2;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-evenly;
     overflow: hidden;
     align-items: center;
 }
