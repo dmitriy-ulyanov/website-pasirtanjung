@@ -37,7 +37,7 @@
                 <p>Abon Ikan Desa Pasir Tanjung adalah usaha rumahan yang mengolah ikan segar menjadi abon ikan yang lezat dan bergizi. Terletak di Desa Pasir Tanjung, produk abon ikan ini diolah dengan resep tradisional yang khas, menggunakan bahan-bahan alami tanpa bahan pengawet. Proses produksinya dilakukan secara higienis dan mengutamakan kualitas, sehingga menghasilkan abon ikan dengan cita rasa gurih dan tekstur yang renyah.</p>
                 <button onclick="window.location.href='https://id.shp.ee/ZCXvT4B'">Beli di Shoppee</button>
                 <button onclick="window.location.href='https://tokopedia.link/vM6b9HnikLb'">Beli di Tokopedia</button>
-                <button onclick="window.location.href='/about'" class="chat">Chat Penjual</button>
+                <button onclick="window.location.href='https://wa.me/6281285690072'" class="chat">Chat Penjual</button>
             </div>
             <div class="abon-img">
                 <img src="produk unggulan.webp" alt="Abon Ikan">
@@ -54,7 +54,7 @@
                 <p>Krupuk Ikan Desa Pasir Tanjung adalah usaha rumahan yang memproduksi krupuk ikan dengan rasa yang lezat dan kualitas terjamin. Berlokasi di Desa Pasir Tanjung, usaha ini menggunakan ikan segar sebagai bahan utama, diolah dengan bumbu-bumbu alami, tanpa bahan pengawet atau pewarna buatan. Proses pembuatan krupuk ikan dilakukan secara tradisional namun higienis, memastikan produk yang renyah dan gurih.</p>
                 <button onclick="window.location.href='https://id.shp.ee/ZCXvT4B'">Beli di Shoppee</button>
                 <button onclick="window.location.href='https://tokopedia.link/vM6b9HnikLb'">Beli di Tokopedia</button>
-                <button onclick="window.location.href='/about'" class="chat">Chat Penjual</button>
+                <button onclick="window.location.href='https://wa.me/6281285690072'" class="chat">Chat Penjual</button>
             </div>
             <div class="krupuk-img">
                 <img src="produk unggulan.webp" alt="Abon Ikan">
