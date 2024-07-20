@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Routing\Router;
+use Filament\Http\Controllers\AdminController;
 
 Admin::routes();
 
