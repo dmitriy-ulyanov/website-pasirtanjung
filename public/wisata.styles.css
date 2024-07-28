@@ -18,7 +18,7 @@ nav {
 .kembali > a {
     margin-left: 8px;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -41,7 +41,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -50,7 +50,7 @@ nav {
 }
 
 .page-title {
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -72,7 +72,7 @@ header {
 
 header > h3 {
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -83,7 +83,7 @@ header > h3 {
 
 header > h1 {
     font-size: 4.5rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -94,7 +94,7 @@ header > h1 {
 
 header > p {
     font-size: 0.8rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
@@ -139,19 +139,20 @@ header > p {
 
 .icon {
     height: 24px;
+    margin-top: 24px;
     margin-bottom: 10px;
 }
 
 .sarana h2 {
     margin-top: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
 .sarana p {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
@@ -195,7 +196,7 @@ footer {
 
 footer h2 {
     font-size: 2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
     color: #355640;
@@ -204,7 +205,7 @@ footer h2 {
 
 footer p {
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #355640;

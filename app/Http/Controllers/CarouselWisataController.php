@@ -6,9 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\CarouselWisata;
 use App\Http\Controllers\Controller;
 use Database\Seeders\CarouselWisataSeeder;
-use Illuminate\Support\Facades\Session;
-
-Session::start();
 
 class CarouselWisataController extends Controller
 {
@@ -17,9 +14,17 @@ class CarouselWisataController extends Controller
      */
     public function index()
     {
-        $carouselwisata = CarouselWisata::orderBy('id')->get();
-        return view('carousel.wisata.home', compact(['carouselwisata']));
+        // Mengambil kolom id, judul, dan gambar dari tabel carousel_wisatas
+        $datacarouselwisata = CarouselWisata::select('id', 'judul', 'gambar')->get();
+        // dd($datacarouselwisata); // Pastikan data ini tidak null atau kosong
+
+        // Mengembalikan view dengan data yang diambil dari database
+        return view('dashboard', [
+            'carousel_wisatas' => $datacarouselwisata
+        ]);
     }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -34,32 +39,17 @@ class CarouselWisataController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
-
-    public function save(Request $request)
-    {
-        $validation = $request->validate([
-            'judul' => 'required',
-            'gambar' => 'image|mimes:jpeg,png,jpg,webp|max:2048', // Menghapus 'required' dari sini
+        $request->validate([
+            'judul' => 'required|string',
+            'gambar' => 'required|image|mimes:jpeg,png,jpg,svg,webp|max:4192',
         ]);
 
-        if ($request->hasFile('gambar')) {
-            $gambarPath = $request->file('gambar')->store('public');
-            $validation['gambar'] = $gambarPath;
-        } else {
-            unset($validation['gambar']); // Menghapus 'gambar' dari validasi jika tidak ada file yang diunggah
-        }
+        CarouselWisata::create([
+            'judul' => $request->judul,
+            'gambar' => $request->file('gambar')->store('storage/public'),
+        ]);
 
-        $data = CarouselWisata::create($validation);
-
-        if ($data) {
-            session()->flash('success', 'Karousel berhasil disimpan');
-            return redirect()->route('carousel.wisata.home');
-        } else {
-            session()->flash('error', 'Karousel gagal disimpan');
-            return redirect()->route('carousel.wisata.create');
-        }
+        return redirect('/dashboard')->with('status','Slide berhasil dibuat');
     }
 
     /**
@@ -67,16 +57,15 @@ class CarouselWisataController extends Controller
      */
     public function show(CarouselWisata $carouselWisata)
     {
-        //
+        return view('carousel.wisata.show');
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(CarouselWisata $carouselWisata, $id)
+    public function edit()
     {
-        $carouselwisata = CarouselWisata::findOrFail($id);
-        return view('carousel.wisata.update', compact('carouselwisata'));
+        return view('carousel/wisata/edit');
     }
 
     /**
@@ -84,32 +73,7 @@ class CarouselWisataController extends Controller
      */
     public function update(Request $request, CarouselWisata $carouselWisata, $id)
     {
-        $carouselwisata = CarouselWisata::findOrFail($id);
-        $judul = $request->judul;
-        $gambar = $request->gambar;
-
-        $carouselwisata->judul = $judul;
-        $carouselwisata->gambar = $gambar;
-        $data = $carouselwisata->save();
-        if ($data) {
-            session()->flash('success', 'Slide berhasil diupdate');
-            return redirect(route('carousel/wisata/home'));
-        } else {
-            session()->flash('error', 'Terdapat masalah ketika mengupdate slide');
-            return redirect(route('carousel.wisata/update'));
-        }
-    }
-
-    public function delete($id)
-    {
-        $carouselwisata = CarouselWisata::findOrFail($id)->delete();
-        if ($carouselwisata) {
-            session()->flash('success', 'Karousel berhasil dihapus');
-            return redirect(route('carousel/wisata/home'));
-        } else {
-            session()->flash('error', 'Karousel gagal dihapus');
-            return redirect(route('carousel.wisata/home'));
-        }
+        //
     }
 
     /**
@@ -117,6 +81,7 @@ class CarouselWisataController extends Controller
      */
     public function destroy(CarouselWisata $carouselWisata)
     {
-        //
+        $carouselWisata->delete();
+        return redirect('/dashboard')->with('status','Slide berhasil dihapus');
     }
 }

@@ -35,7 +35,7 @@ nav {
 
 .logo > p {
     padding-left: 16px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titilium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -50,7 +50,7 @@ nav {
 .nav-links > li {
     list-style: none;
     padding: 24px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titilium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -111,7 +111,7 @@ nav {
 .text-elements h1 {
     font-size: 7rem;
     margin: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -119,7 +119,7 @@ nav {
 .text-elements p {
     font-size: 1.5rem;
     margin: 16px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -163,7 +163,7 @@ iframe {
     color: #355640;
     font-size: 3.5rem;
     margin: 0px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -172,7 +172,7 @@ iframe {
     color: #355640;
     margin-top: 32px;
     font-size: 1rem;
-    font-family: "Lora", serif;
+    font-family: "Titillium Web", serif;
     line-height: 20px;
     font-weight: 200;
     font-style: normal;
@@ -188,7 +188,7 @@ iframe {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -241,7 +241,7 @@ iframe {
     font-size: 2rem;
     margin-top: 16px;
     margin-bottom: 0px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -250,7 +250,7 @@ iframe {
     color: #355640;
     margin-top: 8px;
     font-size: 14px;
-    font-family: "Lora", serif;
+    font-family: "Titillium Web", serif;
     line-height: 20px;
     font-weight: 200;
     font-style: normal;
@@ -289,7 +289,7 @@ iframe {
     font-size: 2rem;
     margin-top: 16px;
     margin-bottom: 0px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -298,7 +298,7 @@ iframe {
     color: #355640;
     margin-top: 8px;
     font-size: 14px;
-    font-family: "Lora", serif;
+    font-family: "Titillium Web", serif;
     line-height: 20px;
     font-weight: 200;
     font-style: normal;
@@ -390,7 +390,7 @@ iframe {
 .carousel-wisata-text p {
     font-size: 1rem;
     margin: 16px;
-    font-family: "Lora", sans-serif;
+    font-family: "Titilium Web", sans-serif;
     font-weight: 100;
     font-style: normal;
 }
@@ -398,7 +398,7 @@ iframe {
 .carousel-wisata-text h1 {
     font-size: 7rem;
     margin: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titilium Web", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -450,7 +450,7 @@ iframe {
     width: 60%;
     color: #355640;
     text-align: left;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     justify-content: center;
 }
 
@@ -470,7 +470,7 @@ iframe {
 .carousel-kegiatan-text p {
     font-size: 1rem;
     margin: 16px;
-    font-family: "Lora", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
 }
 
@@ -523,7 +523,7 @@ iframe {
 .data-desa-text h1 {
     font-size: 7rem;
     margin: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -531,7 +531,7 @@ iframe {
 .data-desa-text p {
     font-size: 1rem;
     margin: 16px;
-    font-family: "Lora", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -547,7 +547,7 @@ iframe {
     margin-left: 70px;
     margin-top: 0px;
     margin-bottom: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -557,7 +557,7 @@ iframe {
     margin-top: 22px;
     margin-left: 70px;
     font-size: 1rem;
-    font-family: "Lora", serif;
+    font-family: "Titillium Web", serif;
     line-height: 20px;
     font-weight: 200;
     font-style: normal;
@@ -632,13 +632,13 @@ iframe {
 
 .text-container h2 {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 2.3rem;
 }
 
 .text-container p {
     margin: 0;
-    font-family: "Lora", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 20;
     font-size: 1rem;
 }
@@ -646,7 +646,7 @@ iframe {
 .text-container-bottom-left {
     width: 25%; /* Ensures text containers only take up 1/4 of the left card */
     align-self: start; /* Align text container to the start of the row */
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 1.75rem;
     margin: 10px;
     padding: 10px;
@@ -673,7 +673,7 @@ iframe {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -691,7 +691,7 @@ iframe {
     margin-left: 95px;
     margin-top: 70px;
     margin-bottom: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -762,7 +762,7 @@ iframe {
     margin-left: 12px;
     margin-top: 0px;
     margin-bottom: 2px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     text-align: center;
@@ -771,7 +771,7 @@ iframe {
 .potensi-desa-tabel h1 {
     color: #355640;
     font-size: 5rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
     display: inline-block;
@@ -783,7 +783,7 @@ iframe {
 .potensi-desa-tabel p {
     color: #355640;
     font-size: 1rem;
-    font-family: "Lora", serif;
+    font-family: "Titillium Web", serif;
     line-height: 20px;
     font-weight: 200;
     font-style: normal;
@@ -803,7 +803,7 @@ iframe {
     align-content: center;
     text-align: center;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -834,7 +834,7 @@ iframe {
     margin-left: 95px;
     margin-top: 0px;
     margin-bottom: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -909,7 +909,7 @@ iframe {
 
 .other-text-container p {
     margin: 0;
-    font-family: "Lora", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 20;
     font-size: 1rem;
 }
@@ -918,7 +918,7 @@ iframe {
     color: #fff;
     font-size: 1rem;
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: bold;
 }
@@ -931,7 +931,7 @@ iframe {
     margin-left: 95px;
     margin-top: 40px;
     margin-bottom: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -1005,7 +1005,7 @@ iframe {
 
 .another-text-container p {
     margin: 0;
-    font-family: "Lora", sans-serif;
+    font-family: "Titilium Web", sans-serif;
     font-weight: 20;
     font-size: 1rem;
 }
@@ -1014,7 +1014,7 @@ iframe {
     color: #fff;
     font-size: 1rem;
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titilium Web", sans-serif;
     font-weight: 500;
     font-style: bold;
 }
@@ -1038,7 +1038,7 @@ iframe {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Titilium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -1056,7 +1056,7 @@ iframe {
     margin-left: 95px;
     margin-top: 200px;
     margin-bottom: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -1129,13 +1129,13 @@ iframe {
 .card-top .sarana-text-container h4 {
     color: #fff;
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: bold;
 }
 
 .card-bottom .sarana-text-container p {
-    font-family: "Lora", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 20;
     font-size: 1rem;
     color: #355640;
@@ -1207,7 +1207,7 @@ footer {
 
 footer h2 {
     font-size: 2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
     color: #355640;
@@ -1216,7 +1216,7 @@ footer h2 {
 
 footer p {
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #355640;

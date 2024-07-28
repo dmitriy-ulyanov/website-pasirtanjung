@@ -1,50 +1,38 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Membuat Slide') }}
+            {{ __('Admin Desa Pasirtanjung') }}
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <div id="carouselWisata" class="py-4">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    <h1 class="mb-0">Tambah Slide</h1>
-                    <hr />
-                    @if (session()->has('error'))
-                    <div>
-                        {{session('error')}}
+                <div class="p-6 text-gray-900 position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1>{{ __("Create Slide Carousel Wisata") }}</h1>
                     </div>
-                    @endif
-                    <p><a href="{{ route('carousel.wisata') }}" class="btn btn-primary">Kembali</a></p>
-
-                    <form action="{{ route('carousel/wisata/save') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('carouselwisata.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <div class="row mb-3">
-                            <div class="col">
-                                <input type="text" name="judul" class="form-control" placeholder="Judul">
-                                @error('judul')
-                                <span class="text-danger">{{$message}}</span>
-                                @enderror
-                            </div>
+                        <div class="mb-3">
+                            <label for="Judul"></label>
+                            <input type="text" name="judul" class="form-control">
+                            @error('judul') <span class="text-danger">{{ $message }}</span> @enderror
                         </div>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <input type="file" name="gambar" class="form-control" placeholder="Pilih Gambar" accept="image/*">
-                                @error('gambar')
-                                <span class="text-danger">{{$message}}</span>
-                                @enderror
-                            </div>
+                        <div class="mb-3">
+                            <label for="Gambar"></label>
+                            <input type="file" name="gambar" class="form-control">
+                            @error('gambar') <span class="text-danger">{{ $message }}</span> @enderror
                         </div>
-
-                        <div class="row">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Submit</button>
-                            </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <a href="{{ route('dashboard') }}" class="btn btn-danger">Kembali</a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </x-app-layout>

@@ -35,7 +35,7 @@ nav {
 
 .logo > p {
     padding-left: 16px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: #355640;
@@ -43,7 +43,7 @@ nav {
 
 .logo > h4 {
     padding-right: 16px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: #355640;
@@ -57,7 +57,7 @@ nav {
 
 .nav-links > li {
     list-style: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -96,7 +96,7 @@ nav {
     width: 60%;
     color: #355640;
     text-align: left;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     justify-content: center;
     margin: 24px;
     margin-left: 40px;
@@ -124,7 +124,7 @@ nav {
     font-size: 1rem;
     margin-top: 16px;
     margin-bottom: 16px;
-    font-family: "Lora", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
 }
 
@@ -151,7 +151,7 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -168,7 +168,7 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: #355640;
@@ -200,7 +200,7 @@ nav {
     width: 60%;
     color: #355640;
     text-align: left;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     justify-content: center;
     margin: 24px;
     margin-left: 40px;
@@ -228,7 +228,7 @@ nav {
     font-size: 1rem;
     margin-top: 16px;
     margin-bottom: 16px;
-    font-family: "Lora", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
 }
 
@@ -255,7 +255,7 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -272,7 +272,7 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: #355640;
@@ -302,7 +302,7 @@ footer {
 
 footer h2 {
     font-size: 2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
     color: #355640;
@@ -311,7 +311,7 @@ footer h2 {
 
 footer p {
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #355640;
